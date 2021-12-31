@@ -20,6 +20,7 @@ namespace LocationManagementSystem.Entities.Configurations
             builder.HasMany(l => l.Departments).WithOne().IsRequired();
             builder.HasMany(l => l.Rooms).WithOne().IsRequired();
             builder.HasOne(l => l.Inventory).WithOne().IsRequired();
+            builder.Property(l => l.Type).IsRequired();
             builder.Property(l => l.Name).IsRequired();
             builder.Property(l => l.Size).IsRequired();
             builder.Property(l => l.PhoneNumber).IsRequired();

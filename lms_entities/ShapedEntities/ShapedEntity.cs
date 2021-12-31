@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductManagementSystem.Entities.ShapedEntities
+namespace LocationManagementSystem.Entities.ShapedEntities
 {
-    public abstract class ShapedEntity
+    public class ShapedEntity
     {
+        public Guid Id { get; set; }
         public Entity Entity { get; set; }
 
         public ShapedEntity()

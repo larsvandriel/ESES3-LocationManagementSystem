@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductManagementSystem.Entities.ShapedEntities
+namespace LocationManagementSystem.Entities.ShapedEntities
 {
     public class LinkCollectionWrapper<T> : LinkResourceBase
     {

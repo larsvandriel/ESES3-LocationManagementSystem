@@ -22,9 +22,9 @@ namespace LocationManagementSystem.Entities.Extensions
             dbLocation.Departments = location.Departments;
             dbLocation.Rooms = location.Rooms;
             dbLocation.Inventory = location.Inventory;
-            dbLocation.DateCreated = location.DateCreated;
+            dbLocation.TimeCreated = location.TimeCreated;
             dbLocation.Deleted = location.Deleted;
-            dbLocation.DateDeleted = location.DateDeleted;
+            dbLocation.TimeDeleted = location.TimeDeleted;
         }
     }
 }

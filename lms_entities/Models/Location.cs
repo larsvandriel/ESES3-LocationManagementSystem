@@ -20,8 +20,8 @@ namespace LocationManagementSystem.Entities.Models
         public List<Department> Departments { get; set; }
         public List<Room> Rooms { get; set; }
         public Inventory Inventory { get; set; }
-        public DateTime DateCreated { get; set; }
+        public DateTime TimeCreated { get; set; }
         public bool Deleted { get; set; }
-        public DateTime DateDeleted { get; set; }
+        public DateTime TimeDeleted { get; set; }
     }
 }

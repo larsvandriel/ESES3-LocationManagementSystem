@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\lms_contracts\lms_contracts.csproj" />
+    <ProjectReference Include="..\lms_entities\lms_entities.csproj" />
+  </ItemGroup>
+
 </Project>

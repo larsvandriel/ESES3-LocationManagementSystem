@@ -25,9 +25,9 @@ namespace LocationManagementSystem.Entities.Configurations
             builder.Property(l => l.Size).IsRequired();
             builder.Property(l => l.PhoneNumber).IsRequired();
             builder.Property(l => l.Email).IsRequired();
-            builder.Property(l => l.DateCreated).IsRequired();
+            builder.Property(l => l.TimeCreated).IsRequired();
             builder.Property(l => l.Deleted).IsRequired();
-            builder.Property(l => l.DateDeleted);
+            builder.Property(l => l.TimeDeleted);
         }
     }
 }

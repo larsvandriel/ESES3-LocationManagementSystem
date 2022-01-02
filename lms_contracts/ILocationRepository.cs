@@ -1,4 +1,6 @@
-﻿using LocationManagementSystem.Entities.Models;
+﻿using LocationManagementSystem.Entities.Helpers;
+using LocationManagementSystem.Entities.Models;
+using LocationManagementSystem.Entities.Parameters;
 using LocationManagementSystem.Entities.ShapedEntities;
 using System;
 using System.Collections.Generic;
@@ -10,6 +12,7 @@ namespace LocationManagementSystem.Contracts
 {
     public interface ILocationRepository: IRepositoryBase<Location>
     {
+        PagedList<ShapedEntity> GetAllLocations(LocationParameters locationParameters);
         ShapedEntity GetLocationById(Guid locationId, string fields);
         Location GetLocationById(Guid locationId);
         void CreateLocation(Location location);
